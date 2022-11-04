@@ -43,7 +43,7 @@ public function PesquisarAnimal(Request $request){
 
 public function MostrarAlterarAnimal(animal $registroAnimal){
 
-    return view('alterarBone', ['registroBone' => $registroAnimal]);
+    return view('alterarAnimal', ['registroAnimal' => $registroAnimal]);
 }
 
 public function apagarAnimal(animal $registroAnimal){
