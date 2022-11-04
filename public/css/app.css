@@ -1,0 +1,17 @@
+.footer{
+    background-color: green;
+    bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+}
+
+.navbar{
+    background-color: green;
+    width: 100%;
+    
+}
+
+body{
+    background-color: white;
+}
