@@ -4,7 +4,7 @@
 <div class="text-center">
   <h1>Tela de Edição</h1>
 </div>
-<div class="container cadastroCamisa">
+<div class="container atualizar">
 <form class="row g-3" method="post" action="{{route('alterar-banco-animal',$registroAnimal->id)}}">
   @csrf
   @method('put')
