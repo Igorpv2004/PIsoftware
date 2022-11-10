@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\animalController;
 use App\Http\Controllers\CandidatosController;
+use App\Http\Controllers\loginController;
 
 
 /*
@@ -35,6 +36,13 @@ Route::get('/editarCandidato',[CandidatosController::class,'PesquisarCandidato']
 Route::get('/alterarCandidato/{registroCandidato}',[CandidatosController::class,'MostrarAlterarCandidato'])->name('alterar-candidato');
 Route::delete('/editarCandidato/{registroCandidato}',[CandidatosController::class,'apagarCandidato'])->name('apagar-candidato');
 Route::put('/editarCandidato/{registroCandidato}',[CandidatosController::class,'AlterarBancoCandidato'])->name('alterar-banco-candidato');
+
+
+//login
+Route::get('/Login',[loginController::class,'login']);
+Route::post('/Login', [loginController::class, 'user'])->name('login');
+
+
 
 
 
