@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\animalController;
 use App\Http\Controllers\CandidatosController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\usuarioController;
 
 
 /*
@@ -40,7 +41,14 @@ Route::put('/editarCandidato/{registroCandidato}',[CandidatosController::class,'
 
 //login
 Route::get('/Login',[loginController::class,'login']);
-Route::post('/Login', [loginController::class, 'user'])->name('login');
+Route::post('/Login', [loginController::class,'user'])->name('login-user');
+
+
+//cadastro login
+Route::get('/cadastrarUsuario',[usuarioController::class,'mostrar']);
+Route::post('/cadastrarUsuario',[usuarioController::class,'cadastrar'])->name('criar-usuario');
+
+
 
 
 

@@ -16,13 +16,20 @@ class loginController extends Controller
 
     public function user(Request $request){
 
-        if(Auth::attempt(['email' => $request-> email, 'password' => $request-> password])){
-            
-            dd('logado');
+        $this->validate($request,[
+            'email' => 'required',
+            'password' => 'required'
+        ],[
+            'email.required' => 'E-mail é obrigatório!',
+            'password.required' => 'Senha é obrigatório!',
 
+        ]);
+
+        if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){
+            return Redirect::route('editar-animal');
         }else{
-
-            dd('nao logado');
+            return redirect()->back()->with('danger','E-mail ou Senha inválida');
+            
         }
     }
 
