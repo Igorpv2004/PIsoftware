@@ -3,6 +3,9 @@
 
 <section class="cadastrarCandidatos">
 
+
+
+
 <div class="text-center">
   <h1>Tela de Cadastro</h1>
 </div>

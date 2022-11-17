@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/app.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -62,8 +64,8 @@
 
       </div>
       <div class="col-sm-6 px-0 d-none d-sm-block">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img3.webp"
-          alt="Login image" class="w-100 vh-100" style="object-fit: cover; object-position: left;">
+        <img src="https://4.bp.blogspot.com/-gyx9VgFklwM/UqGOEjvn8qI/AAAAAAAAARk/CsTNTX8L_XI/s1600/cachorro-abracando-o-gato.jpg"
+          alt="Login image" class="w-200 vh-200" style="object-fit: cover; object-position: left;">
       </div>
     </div>
   </div>
