@@ -1,3 +1,171 @@
 body{
     background-color: gainsboro;
 }
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    width: auto;
+}
+
+
+
+
+
+.titulo {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-top: 10%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.formulario {
+    margin: 10%;
+    padding-bottom: 10%;
+}
+
+
+.titulo1 {
+    font-size: 250%;
+    color: rgb(255, 255, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.overtexto {
+    color: aliceblue;
+    font-size: 250%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.placa1 {
+    color: aliceblue;
+    font-size: 250%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.menu1 {
+    position: absolute;
+    margin-left: 67%;
+    font-size: 120%;
+}
+
+
+.pesquisa {
+    size: 10px;
+    padding-left: 5%;
+    margin-top: 1%;
+
+}
+
+
+
+.caixabranca {
+    background-color: rgb(255, 255, 255);
+    width: 1200px;
+    height: auto;
+    position:relative;
+    margin-top: 3%;
+    margin: 5% auto;
+    border-radius: 15px;
+    
+    
+    
+
+}
+
+.body1{
+    background-color: rgb(40, 46, 31);
+
+    
+ 
+    
+}
+
+
+.card{
+    position: top 10%;
+    margin: 4%;
+   
+    
+}
+
+
+.slideultimo {
+    margin: 4%;
+}
+
+
+
+.footer1{
+    background-color: rgb(24, 24, 24);
+    border-radius: 14px;
+    position:relative;   
+
+}
+
+.footertexto {
+    margin-left: 40%;
+}
+
+
+.buscaEditar {
+
+    padding: 5%;
+}
+
+.alterarEspaco {
+    padding: 10%;
+
+}
+
+
+.atualizarbotao {
+    margin-top: 15%;
+    text-align: center;
+}
+
+
+
+
+.alterarcaixa1 {
+    margin: 3%;
+}
+
+
+.alterarcaixa2 {
+    margin: 3%;
+}
+
+
+.alterarcaixa3 {
+    margin: 3%;
+}
+
+
+
+
+
+
+
+
+.topico10 {
+    
+}
+
+.carousel-item{
+    width: 2000px;
+    height: 700px;
+}
+
+.navbar{
+    width: 100%;
+    height: 130px;
+}

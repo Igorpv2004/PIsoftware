@@ -5,6 +5,8 @@ use App\Http\Controllers\animalController;
 use App\Http\Controllers\CandidatosController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\usuarioController;
+use App\Http\Controllers\homeController;
+
 
 
 /*
@@ -47,6 +49,11 @@ Route::post('/Login', [loginController::class,'user'])->name('login-user');
 //cadastro login
 Route::get('/cadastrarUsuario',[usuarioController::class,'mostrar']);
 Route::post('/cadastrarUsuario',[usuarioController::class,'cadastrar'])->name('criar-usuario');
+
+//home
+Route::get('/home',[homeController::class,'MostrarHome']);
+
+
 
 
 
