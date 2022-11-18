@@ -12,6 +12,11 @@ class animalController extends Controller
     {
         return view('cadastrarAnimais');            
     }
+
+    public function listaAnimal()
+    {
+        return view('listaAnimal');            
+    }
     public function SalvarBancoAnimal(Request $request){
 
         $dadosAnimal = $request->validate([

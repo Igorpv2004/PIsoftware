@@ -53,12 +53,10 @@
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Adote/Doe
+            Adote
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="">Adote</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="">Doar</a></li>
+            <li><a class="dropdown-item" href="listaAnimal">Lista de animais</a></li>
           </ul>
         </li>
 
@@ -76,6 +74,17 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="/cadastrarCandidatos">Cadastrar Candidados</a></li>
             <li><a class="dropdown-item" href="/editarCandidato">Gerenciamento Candidatos</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login/Cadastro
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="/Login">Login</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="/cadastrarUsuario">Cadastro</a></li>
           </ul>
         </li>
 
@@ -116,9 +125,7 @@
       <img src="{{'/img/familia.png'}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         
-        <div class="titulo1">
-        <b>Adote ou doe um pet agora!</b>
-        </div>
+        
 
       
       </div>
@@ -129,10 +136,7 @@
       <img src="{{'/img/familia1.png'}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
 
-        <div class="overtexto">
-        <b>Adote ou doe um pet agora!</b>
-        </div>
-
+        
         
         
       </div>
@@ -143,9 +147,7 @@
       <img src="{{'/img/familia2.png'}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
 
-        <div class="placa1">
-        <b>Adote ou doe um pet agora!</b>
-        </div>
+        
 
       </div>
     </div>

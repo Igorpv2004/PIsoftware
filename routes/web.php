@@ -26,6 +26,7 @@ Route::get('/', function () {
 });
 
 //animais
+Route::get('/listaAnimal',[animalController::class,'listaAnimal']);
 Route::get('/cadastrarAnimais',[animalController::class,'cadastroAnimal'])->name('cadastrar-animal');
 Route::post('/cadastrarAnimais',[animalController::class,'SalvarBancoAnimal'])->name('salvar-banco-animal');
 Route::get('/editarAnimal',[animalController::class,'PesquisarAnimal'])->name('editar-animal');

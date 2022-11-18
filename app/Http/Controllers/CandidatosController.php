@@ -42,12 +42,12 @@ public function PesquisarCandidato(Request $request){
    return view('editarCandidato',['registroCandidato' => $dadosCandidato]);
 }
 
-public function MostrarAlterarCandidato(Candidatos $registroCandidato){
+public function MostrarAlterarCandidato(Candidato $registroCandidato){
 
     return view('alterarCandidato', ['registroCandidato' => $registroCandidato]);
 }
 
-public function apagarCandidato(Candidatos $registroCandidato){
+public function apagarCandidato(Candidato $registroCandidato){
         
         
     $registroCandidato->delete();
@@ -56,7 +56,7 @@ public function apagarCandidato(Candidatos $registroCandidato){
     return Redirect::route('editar-candidato');
 }
 
-public function AlterarBancoCandidato(Candidatos $registroCandidato, Request $request){
+public function AlterarBancoCandidato(Candidato $registroCandidato, Request $request){
 
     $banco = $request->validate([
     'nome' => 'string|required',
