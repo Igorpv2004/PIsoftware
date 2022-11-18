@@ -27,7 +27,7 @@
       <th scope="col">Código</th>
       <th scope="col">Nome</th>
       <th scope="col">E-mail</th>
-      <th scope="col">Data De Nascimento</th>
+      <th scope="col">Código do animal de interesse</th>
       <th scope="col">Telefone</th>
       <th scope="col">Editar</th>
       <th scope="col">Excluir</th>
@@ -40,7 +40,7 @@
       <th scope="row">{{$registroCandidato->id}}</th>
       <td>{{$registroCandidato->nome}}</td>
       <td>{{$registroCandidato->email}}</td>
-      <td>{{$registroCandidato->DataDeNascimento}}</td>
+      <td>{{$registroCandidato->codigo}}</td>
       <td>{{$registroCandidato->telefone}}</td>
       <td>
         <a href="{{route('alterar-candidato',$registroCandidato->id)}}">

@@ -16,7 +16,7 @@
   <div class="container-fluid">
 
 
-  <a class="navbar-brand" href="">
+  <a class="navbar-brand" href="/home">
     
       <img src="{{'/img/logo.png'}}" alt="" width="180" height="180" class="d-inline-block align-text-top">
     
@@ -71,12 +71,11 @@
            Admin
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href=""></a></li>
-            <li><a class="dropdown-item" href="">Adotar</a></li>
-            <li><a class="dropdown-item" href="#"></a></li>
+            <li><a class="dropdown-item" href="/cadastrarAnimais">Cadastrar Animais</a></li>
+            <li><a class="dropdown-item" href="/editarAnimal">Gerenciamento Animais</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="">Doar</a></li>
-            <li><a class="dropdown-item" href=""></a></li>
+            <li><a class="dropdown-item" href="/cadastrarCandidatos">Cadastrar Candidados</a></li>
+            <li><a class="dropdown-item" href="/editarCandidato">Gerenciamento Candidatos</a></li>
           </ul>
         </li>
 
@@ -84,12 +83,7 @@
 
 <!----------------------------------------------------------------------->
 
-        <div class="pesquisa">
-        <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Busque aqui" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
-      </div>
+        
         
 
 
@@ -224,19 +218,19 @@
     </section>
 
 
-
+<section>
     <footer > 
         <div class="text-center">
             <nav> 
                 <h2>Fique conectado !</h2>
                 <ul> 
-                <a href="https://www.instagram.com/driftcarros/">
+                <a href="">
                 <img src="/img/insta.png" alt="">
                 </a>
-                 <a href="https://www.youtube.com/watch?v=zaOtnaJuIzk">
+                 <a href="">
                   <img src="/img/youtube.png" alt="">
                  </a>
-                <a href="https://pt-br.facebook.com/groups/247202169028650/">
+                <a href="">
                 <img src="/img/facebook.png" alt="">
                 </a>
                 </ul> 
@@ -250,5 +244,6 @@
 </div>
 
 </div>
+</section>
 
 </html>

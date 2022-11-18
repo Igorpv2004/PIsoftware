@@ -9,6 +9,7 @@ use App\Http\Controllers\homeController;
 
 
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,7 +52,10 @@ Route::get('/cadastrarUsuario',[usuarioController::class,'mostrar']);
 Route::post('/cadastrarUsuario',[usuarioController::class,'cadastrar'])->name('criar-usuario');
 
 //home
-Route::get('/home',[homeController::class,'MostrarHome']);
+Route::get('/home',[homeController::class,'MostrarHome'])->name('home');
+
+
+
 
 
 

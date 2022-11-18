@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
-use App\Models\Candidatos;
+use App\Models\Candidato;
 
 
 class CandidatosController extends Controller
@@ -18,13 +18,13 @@ class CandidatosController extends Controller
         $dadosCandidato = $request->validate([
             'nome' => 'string|required',
             'email' => 'string|required',
-            'DataDeNascimento' => 'string|required',
+            'codigo' => 'string|required',
             'telefone' => 'string|required',
             
     
         ]);
     
-        Candidatos::create($dadosCandidato);
+        Candidato::create($dadosCandidato);
     
         return Redirect::route('editar-candidato');
         
@@ -32,7 +32,7 @@ class CandidatosController extends Controller
 
 public function PesquisarCandidato(Request $request){
             
-    $dadosCandidato = Candidatos::query();
+    $dadosCandidato = Candidato::query();
     $dadosCandidato->when($request->nome,function($query, $v1){
         $query->where('nome','like','%'.$v1.'%');
     });
@@ -61,7 +61,7 @@ public function AlterarBancoCandidato(Candidatos $registroCandidato, Request $re
     $banco = $request->validate([
     'nome' => 'string|required',
     'email' => 'string|required',
-    'DataDeNascimento' => 'string|required',
+    'codigo' => 'string|required',
     'telefone' => 'string|required',
     
 

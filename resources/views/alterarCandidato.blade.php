@@ -25,11 +25,11 @@
     @enderror('email')  
   </div>
   <div class="col-12">
-    <label for="inputAno" class="form-label">Data De Nascimento</label>
-    <input type="text" name="DataDeNascimento" value="{{old('DataDeNascimento',$registroCandidato->DataDeNascimento)}}" class="form-control" id="inputAno" placeholder="12/12/12">
-    @error('DataDeNascimento')
-    <div class="fw-bolder">*Preencher o campo Data De Nascimento. </div>
-    @enderror('DataDeNascimento')  
+    <label for="inputAno" class="form-label">Código do animal de interesse</label>
+    <input type="text" name="codigo" value="{{old('codigo',$registroCandidato->codigo)}}" class="form-control" id="inputAno" placeholder="código">
+    @error('codigo')
+    <div class="fw-bolder">*Preencher o campo código. </div>
+    @enderror('codigo')  
   </div>
   <div class="col-md-12">
     <label for="inputCor" class="form-label">Telefone</label>

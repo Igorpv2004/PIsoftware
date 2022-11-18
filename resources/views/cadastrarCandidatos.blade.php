@@ -30,11 +30,11 @@
     @enderror('email')  
   </div>
   <div class="col-12">
-    <label for="inputMarca" class="form-label">Data de Nascimento</label>
-    <input type="text" name="DataDeNascimento" value="{{old('DataDeNascimento')}}" class="form-control" id="inputMarca" placeholder="DD/MM/AAAA">
-    @error('DataDeNascimento')
-    <div class="fw-bolder">*Preencher o campo Data de Nascimento. </div>
-    @enderror('DataDeNascimento')  
+    <label for="inputMarca" class="form-label">Código do animal de interesse</label>
+    <input type="text" name="codigo" value="{{old('codigo')}}" class="form-control" id="inputMarca" placeholder="1">
+    @error('codigo')
+    <div class="fw-bolder">*Preencher o campo código. </div>
+    @enderror('codigo')  
   </div>
   <div class="col-12">
     <label for="inputAno" class="form-label">Telefone</label>
