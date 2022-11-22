@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'animalcare1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_5554DB34A37E4020BEB97E86A19EB1D6 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1804B8156B9B46F491F75BDC6D9179B6 }}
           package: .
