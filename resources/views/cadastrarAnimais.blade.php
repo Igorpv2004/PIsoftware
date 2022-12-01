@@ -6,9 +6,18 @@
   <h1>Tela de Cadastro</h1>
 </div>
 
-<div class="container cadastroBones">
-<form class="row g-3" method="post" action="{{route('salvar-banco-animal')}}">
+<div class="container cadastroAnimal">
+<form class="row g-3" method="post" enctype="multipart/form-data" action="{{route('salvar-banco-animal')}}">
+  
   @csrf
+
+  <div class="form-group">
+    <label for="image"> Foto do animal:</label>
+    <input type="file" id="image" name="image" class="from-control-file">
+
+  </div>
+
+
   <div class="col-md-12">
     <label for="inputModelo" class="form-label">Tipo de Animal</label>
     <input type="text" name="tipo" value="{{old('tipo')}}" class="form-control" id="inputModelo" placeholder="Cachorro">
@@ -49,3 +58,5 @@
 
 
 @endsection
+
+

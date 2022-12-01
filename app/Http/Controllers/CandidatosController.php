@@ -28,6 +28,7 @@ class CandidatosController extends Controller
     
         return Redirect::route('editar-candidato');
         
+        
 }
 
 public function PesquisarCandidato(Request $request){

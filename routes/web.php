@@ -55,6 +55,9 @@ Route::post('/cadastrarUsuario',[usuarioController::class,'cadastrar'])->name('c
 //home
 Route::get('/home',[homeController::class,'MostrarHome'])->name('home');
 
+//
+Route::get('/',[HomeController::class,'MostrarHome'])->name('home');
+
 
 
 

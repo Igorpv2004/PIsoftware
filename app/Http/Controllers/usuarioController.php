@@ -41,7 +41,11 @@ class usuarioController extends Controller
 
         $user->save();
 
-        return Redirect::route('login-user');
+        
+
+        
+
+        return Redirect::route('home');
         }else{
             dd("não cadastrado");
         }

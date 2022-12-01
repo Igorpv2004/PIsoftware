@@ -25,8 +25,34 @@ class animalController extends Controller
             'genero' => 'string|required',
             'descricao' => 'string|required',
             
+            
     
         ]);
+        $animal = new Animal;
+
+        $animal->tipo = $request->tipo;
+        $animal->raca = $request->raca;
+        $animal->genero = $request->genero;
+        $animal->descricao = $request->descricao;
+        
+
+        if($request->hasFile('image') && $request->file('image')->isValid()){
+        
+            $requestImage = $request->image;
+    
+            $extension = $requestImage->extension();
+    
+            $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+    
+            $requestImage->move(public_path('img/animal'), $imageName);
+    
+            $animal->image = $imageName;
+    
+        }
+    
+        $animal->save();
+    
+        return redirect('/home')->with('msg', 'Cadastro realizado com sucesso!');
     
         animal::create($dadosAnimal);
     
@@ -78,4 +104,6 @@ public function AlterarBancoAnimal(animal $registroAnimal, Request $request){
 
     return Redirect::route('editar-animal');
 }
+
+
 }

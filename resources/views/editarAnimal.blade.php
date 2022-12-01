@@ -25,6 +25,7 @@
   <thead>
     <tr>
       <th scope="col">Código</th>
+      <th scope="col">Imagem do Animal</th>
       <th scope="col">Tipo Do Animal</th>
       <th scope="col">Raça</th>
       <th scope="col">Gênero</th>
@@ -37,11 +38,14 @@
   <tbody>
     @foreach($registroAnimal as $registroAnimal)
     <tr>
+    
       <th scope="row">{{$registroAnimal->id}}</th>
+      <td><img src="/img/animal/{{$registroAnimal ->image}}" width="100px" height="100px"> </td>
       <td>{{$registroAnimal->tipo}}</td>
       <td>{{$registroAnimal->raca}}</td>
       <td>{{$registroAnimal->genero}}</td>
       <td>{{$registroAnimal->descricao}}</td>
+      
       <td>
         <a href="{{route('alterar-animal',$registroAnimal->id)}}">
             <button type="button" class="btn btn-primary">
